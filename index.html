@@ -9,21 +9,107 @@
     <link rel="icon" href="assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div>
-<div class="header">
-    <nav> header</nav>
-</div>
 
-<div> main body   </div>
+<header class="header">
+  <div class="container">
+   <nav>
+     <ul class="nav-list">
+        <li><a href="#contacts" class="nav-link">Contacts</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#code" class="nav-link">Code</a></li>
+        <li><a href="#projects" class="nav-link">My projects</a></li>                       
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#english" class="nav-link">English</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div> <footer class="footer"> footer </footer>  </div> 
 
-</div>
+
+<main class="main">  
+  <div class="container main-container" >
+    <section class="section section-profile" id="profile">
+      <img src="./assets/my_photo.jpg" alt="photo" class="photo" >
+     <div>
+      <h1 class="section-title">Anastasiya Bobko</h1>
+      <p>Junior Full-stack python developer </p>
+    </div>
+    </section>
+
+    <section class="section" id="contacts"> 
+      <h2 class="section-title"> Contacts</h2>
+      <ul>
+      <li> phone: +375 29 743 76 92 </li>
+      <li> e-mail: a.s.bobko@gmail.com</li>
+      <li> telegram: @abobko</li>
+    </ul>
+    </section>
+
+    <section class="section" id="About"> 
+      <h2 class="section-title"> About me</h2>
+      <p> I'm a junior programmer. I've started my route in IT from learning Python.
+        Now I want to learn JavaScript in order to use it in Django and other projects and become full-stack developer. </p>
+    </section>
+
+    <section class="section" id="skills"> 
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li> HTML/CSS;</li>
+        <li>  Python 3; Django;</li>
+        <li> Git; Jira</li>
+      </ul> 
+    </section>
+
+    <section class="section" id="code"> 
+      <h2 class="section-title">Code</h2>
+      <p> <code> def check_lottery(): <br>
+        num = input() #str<br>
+        if 8>=(len(num))>= 2 and (len(num))%2==0:<br>
+            b = list(map(int, num)) #convert to numbers<br>
+            sumRight= 0<br>
+            sumLeft = 0<br>
+            half_list = int(len(b)/2)<br>
+            count = 0<br>
+            count_1 = half_list</code></p>
+    </section>
+   
+    <section class="section" id="education"> 
+      <h2 class="section-title"> Education</h2>
+      <P> Belarussian State University, International Law</P>
+    </section>
+
+    <section class="section" id="projects"> 
+      <h2 class="section-title">My projects</h2>
+      <p> BeFit web-project <br>
+        Visit my Github profile to see my <a href="https://github.com/AnastasiyaBobko/My_project_Python_Django" class="git-link">
+      Django project</a> </p>
+      
+    </section>
+
+    <section class="section" id="english"> 
+      <h2 class="section-title"> English</h2>
+      <p>upper intermediate</p>
+    </section>
+  </div>
+</main>
+
+
+
+<footer class="footer"> 
+  <div class="container container-footer">
+  <div>
+  <p> &#169; 2022<a href="https://github.com/AnastasiyaBobko"  class="footer-link">AnastasiyaBobko</a></p>
+  </div>
+  <a href="https://rs.school/js/" class="rss_logo"></a>
+
+  </div>
+</footer> 
 
 
 </body>
